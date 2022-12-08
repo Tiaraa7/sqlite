@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@android:style/Theme.NoTitleBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#6BFF5722"
+    android:padding="10dp"
+    tools:context="com.tiara.sqlite.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:text="Data Mahasiswa"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000"
+            tools:ignore="HardcodedText,InefficientWeight" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textColor="#000"
+            android:text="NIM"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/editTextnim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="NIM"
+            android:inputType="number"
+            tools:ignore="Autofill,HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="NAMA"
+            android:textColor="#000"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/editText_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="NAMA"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill,HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Kelas"
+            android:textColor="#000"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/editText_kelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="KELAS"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill,HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="NO HP"
+            android:textColor="#000"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/editText_nohp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="NOHP"
+            android:inputType="number"
+            tools:ignore="Autofill,HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="EMAIL"
+            android:textColor="#000"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="EMAIL"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:background="@color/black"
+            android:text="Simpan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:id="@+id/button_view"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:background="@color/black"
+            android:text="Tampil Data"
+            android:textColor="@android:color/background_light"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:background="@color/black"
+            android:text="Ubah"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/background_light"
+            tools:ignore="ButtonStyle,HardcodedText" />
+        <Button
+            android:id="@+id/button_delete"
+            android:background="@color/black"
+            android:textColor="@android:color/background_light"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:text="Hapus"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+</LinearLayout>
